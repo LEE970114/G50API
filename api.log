@@ -1,0 +1,624 @@
+2022-10-11 10:02:33,480 py37_api INFO test_g50JHregiser.py [23] {'id': 1, 'title': 'g50登入', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/aggregationServer/login', 'req_data': '{"cmd":"100","sn":"消息ID","body":{"ip":"10.28.22.11","port":"8080"}}', 'assert_list': '{\n"cmd":"100",\n"sn":"消息ID",\n"body":{\n"token":"a4e8548b8a2894ebe315813bb6acd6c0"\n},\n"code":0,\n"desc":"登录成功"\n}'}
+2022-10-11 10:02:33,481 py37_api INFO test_g50JHregiser.py [24] 测试参数
+{'cmd': '100', 'sn': '消息ID', 'body': {'ip': '10.28.22.11', 'port': '8080'}}
+2022-10-11 10:02:33,481 py37_api INFO test_g50JHregiser.py [25] 响应信息
+{'cmd': '100', 'sn': '消息ID', 'body': {'token': 'ac53a3a8311f8748af539619c39422da'}, 'code': 0, 'desc': '登录成功'}
+2022-10-11 10:02:33,493 py37_api INFO my_assert.py [19] 要断言的内容为：
+cmd
+2022-10-11 10:02:33,494 py37_api INFO my_assert.py [19] 要断言的内容为：
+sn
+2022-10-11 10:02:33,494 py37_api INFO my_assert.py [19] 要断言的内容为：
+body
+2022-10-11 10:02:33,494 py37_api INFO my_assert.py [19] 要断言的内容为：
+code
+2022-10-11 10:02:33,494 py37_api INFO my_assert.py [19] 要断言的内容为：
+desc
+2022-10-11 10:02:33,494 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:33,679 py37_api INFO test_g50JHregiser.py [23] {'id': 2, 'title': '心跳接口', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/aggregationServer/keepalive', 'req_data': '{"cmd":"100","sn":"消息ID","body":{"token":"a4e8548b8a2894ebe315813bb6acd6c0"}}', 'assert_list': '{\n"cmd":"100",\n"sn":"消息ID",\n"body":{\n"status":1\n},\n"code":0,\n"desc":"存活"\n}'}
+2022-10-11 10:02:33,680 py37_api INFO test_g50JHregiser.py [24] 测试参数
+{'cmd': '100', 'sn': '消息ID', 'body': {'token': 'a4e8548b8a2894ebe315813bb6acd6c0'}}
+2022-10-11 10:02:33,680 py37_api INFO test_g50JHregiser.py [25] 响应信息
+{'cmd': '100', 'sn': '消息ID', 'body': {'status': 1}, 'code': 0, 'desc': '存活'}
+2022-10-11 10:02:33,680 py37_api INFO my_assert.py [19] 要断言的内容为：
+cmd
+2022-10-11 10:02:33,680 py37_api INFO my_assert.py [19] 要断言的内容为：
+sn
+2022-10-11 10:02:33,680 py37_api INFO my_assert.py [19] 要断言的内容为：
+body
+2022-10-11 10:02:33,680 py37_api INFO my_assert.py [19] 要断言的内容为：
+code
+2022-10-11 10:02:33,680 py37_api INFO my_assert.py [19] 要断言的内容为：
+desc
+2022-10-11 10:02:33,680 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:33,867 py37_api INFO test_g50JHregiser.py [23] {'id': 3, 'title': '心跳接口（未登入）', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/aggregationServer/keepalive', 'req_data': '{"cmd":"100","sn":"消息ID","body":{"token":"5041b16e2918e7327bd0aad5f157c457"}}', 'assert_list': '{\n"cmd":"100",\n"sn":"消息ID",\n"body":[],\n"code":201,\n"desc":"聚合服务器未登录"\n}'}
+2022-10-11 10:02:33,867 py37_api INFO test_g50JHregiser.py [24] 测试参数
+{'cmd': '100', 'sn': '消息ID', 'body': {'token': '5041b16e2918e7327bd0aad5f157c457'}}
+2022-10-11 10:02:33,868 py37_api INFO test_g50JHregiser.py [25] 响应信息
+{'cmd': '100', 'sn': '消息ID', 'body': {'status': 1}, 'code': 0, 'desc': '存活'}
+2022-10-11 10:02:33,868 py37_api INFO my_assert.py [19] 要断言的内容为：
+cmd
+2022-10-11 10:02:33,868 py37_api INFO my_assert.py [19] 要断言的内容为：
+sn
+2022-10-11 10:02:33,868 py37_api INFO my_assert.py [19] 要断言的内容为：
+body
+2022-10-11 10:02:33,868 py37_api INFO my_assert.py [19] 要断言的内容为：
+code
+2022-10-11 10:02:33,868 py37_api INFO my_assert.py [19] 要断言的内容为：
+desc
+2022-10-11 10:02:33,868 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:34,049 py37_api INFO test_g50JHregiser.py [23] {'id': 4, 'title': '更新流量包', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/recharge/update', 'req_data': '{"name":"1024G","price":"2999","id":"4"}', 'assert_list': '{"errcode":0,"data":None,"errmsg":"修改成功"}'}
+2022-10-11 10:02:34,049 py37_api INFO test_g50JHregiser.py [24] 测试参数
+{'name': '1024G', 'price': '2999', 'id': '4'}
+2022-10-11 10:02:34,050 py37_api INFO test_g50JHregiser.py [25] 响应信息
+{'errcode': 0, 'data': None, 'errmsg': '修改成功'}
+2022-10-11 10:02:34,050 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:34,050 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:34,050 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:34,050 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:34,230 py37_api INFO test_g50JHregiser.py [23] {'id': 5, 'title': '更新流量包(发送失败)', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/recharge/update', 'req_data': '{"name":"1024G","price":"2999","id":"4"}', 'assert_list': '{\n "errcode": 400,\n "data": [],\n "errmsg": "发送失败"\n}'}
+2022-10-11 10:02:34,230 py37_api INFO test_g50JHregiser.py [24] 测试参数
+{'name': '1024G', 'price': '2999', 'id': '4'}
+2022-10-11 10:02:34,230 py37_api INFO test_g50JHregiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '修改失败'}
+2022-10-11 10:02:34,230 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:34,230 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:34,230 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:34,230 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:34,401 py37_api INFO test_g50JHregiser.py [23] {'id': 6, 'title': '获取流量包列表', 'method': 'get', 'url': 'http://g50api.test.mifitec.com/v1/recharge/list', 'req_data': '{}', 'assert_list': '{"errcode":0,"data":[{"name":"10G","price":"99.00"},{"name":"30G","price":"199.00"},{"name":"100G","price":"399.00"},{"name":"300G","price":"999.00"}],"errmsg":None}'}
+2022-10-11 10:02:34,401 py37_api INFO test_g50JHregiser.py [24] 测试参数
+{}
+2022-10-11 10:02:34,401 py37_api INFO test_g50JHregiser.py [25] 响应信息
+{'errcode': 0, 'data': [{'name': '10G', 'price': '99.00'}, {'name': '30G', 'price': '199.00'}, {'name': '100G', 'price': '399.00'}, {'name': '1024G', 'price': '2999.00'}, {'name': '1024G', 'price': '2999.00'}, {'name': '1024G', 'price': '2999.00'}], 'errmsg': None}
+2022-10-11 10:02:34,402 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:34,402 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:34,402 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:34,402 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:34,560 py37_api INFO test_g50JHregiser.py [23] {'id': 7, 'title': '获取流量包列表（发送失败）', 'method': 'get', 'url': 'http://g50api.test.mifitec.com/v1/recharge/list', 'req_data': '{}', 'assert_list': '{\n "errcode": 400,\n "data": [],\n "errmsg": "发送失败"\n}'}
+2022-10-11 10:02:34,561 py37_api INFO test_g50JHregiser.py [24] 测试参数
+{}
+2022-10-11 10:02:34,561 py37_api INFO test_g50JHregiser.py [25] 响应信息
+{'errcode': 0, 'data': [{'name': '10G', 'price': '99.00'}, {'name': '30G', 'price': '199.00'}, {'name': '100G', 'price': '399.00'}, {'name': '1024G', 'price': '2999.00'}, {'name': '1024G', 'price': '2999.00'}, {'name': '1024G', 'price': '2999.00'}], 'errmsg': None}
+2022-10-11 10:02:34,561 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:34,561 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:34,561 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:34,561 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:34,741 py37_api INFO test_g50JHregiser.py [23] {'id': 8, 'title': '添加流量包', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/recharge/add', 'req_data': '{"name":"300G","price":"999"}', 'assert_list': '{"errcode":0,"data":None,"errmsg":"添加成功"}'}
+2022-10-11 10:02:34,741 py37_api INFO test_g50JHregiser.py [24] 测试参数
+{'name': '300G', 'price': '999'}
+2022-10-11 10:02:34,741 py37_api INFO test_g50JHregiser.py [25] 响应信息
+{'errcode': 0, 'data': None, 'errmsg': '添加成功'}
+2022-10-11 10:02:34,741 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:34,741 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:34,742 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:34,742 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:34,882 py37_api INFO test_g50JHregiser.py [23] {'id': 9, 'title': '添加流量包失败', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/recharge/add', 'req_data': '{"name":""\n}', 'assert_list': '{"errcode":400,"data":None,"errmsg":"参数name price值不能为空"}'}
+2022-10-11 10:02:34,883 py37_api INFO test_g50JHregiser.py [24] 测试参数
+{'name': ''}
+2022-10-11 10:02:34,883 py37_api INFO test_g50JHregiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '缺少必要参数'}
+2022-10-11 10:02:34,883 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:34,883 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:34,883 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:34,883 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:35,561 py37_api INFO test_g50regiser.py [23] {'id': 1, 'title': '发短信', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/sms/send_code', 'req_data': '{"phone":"17720798629"}', 'assert_list': '{"errcode":0,"data":None,"errmsg":"发送成功"}'}
+2022-10-11 10:02:35,562 py37_api INFO test_g50regiser.py [24] 测试参数
+{'phone': '17720798629'}
+2022-10-11 10:02:35,562 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 0, 'data': None, 'errmsg': '发送成功'}
+2022-10-11 10:02:35,562 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:35,562 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:35,562 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:35,562 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:35,708 py37_api INFO test_g50regiser.py [23] {'id': 2, 'title': '发短信（发送失败）', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/sms/send_code', 'req_data': '{"phone":"177207986291"}', 'assert_list': '{"errcode":400,"data":None,"errmsg":"请输入正确手机号"}'}
+2022-10-11 10:02:35,708 py37_api INFO test_g50regiser.py [24] 测试参数
+{'phone': '177207986291'}
+2022-10-11 10:02:35,708 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '请输入正确手机号'}
+2022-10-11 10:02:35,708 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:35,709 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:35,709 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:35,709 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:35,844 py37_api INFO test_g50regiser.py [23] {'id': 3, 'title': '注册成功', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/register', 'req_data': '{"username":"mifi","phone":"15750878830","password":"mifi","code":"8342"}', 'assert_list': '{"errcode":400,"data":None,"errmsg":"验证码错误"}'}
+2022-10-11 10:02:35,844 py37_api INFO test_g50regiser.py [24] 测试参数
+{'username': 'mifi', 'phone': '15750878830', 'password': 'mifi', 'code': '8342'}
+2022-10-11 10:02:35,844 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '验证码错误'}
+2022-10-11 10:02:35,845 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:35,845 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:35,845 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:35,845 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:36,005 py37_api INFO test_g50regiser.py [23] {'id': 4, 'title': '注册失败', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/register', 'req_data': '{"username":"mifi","phone":"15750878830","password":"mifi","code":"8342"}', 'assert_list': '{"errcode":400,"data":None,"errmsg":"验证码错误"}'}
+2022-10-11 10:02:36,006 py37_api INFO test_g50regiser.py [24] 测试参数
+{'username': 'mifi', 'phone': '15750878830', 'password': 'mifi', 'code': '8342'}
+2022-10-11 10:02:36,006 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '验证码错误'}
+2022-10-11 10:02:36,006 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:36,006 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:36,006 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:36,006 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:36,149 py37_api INFO test_g50regiser.py [23] {'id': 5, 'title': '忘记密码', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/forget', 'req_data': '{"phone":"17720798629","password":"123456","code":"9480"}', 'assert_list': '{"errcode":400,"data":None,"errmsg":"验证码错误"}'}
+2022-10-11 10:02:36,149 py37_api INFO test_g50regiser.py [24] 测试参数
+{'phone': '17720798629', 'password': '123456', 'code': '9480'}
+2022-10-11 10:02:36,150 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '验证码错误'}
+2022-10-11 10:02:36,150 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:36,150 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:36,150 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:36,150 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:36,327 py37_api INFO test_g50regiser.py [23] {'id': 6, 'title': '登入成功', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/login', 'req_data': '{"username":"","phone":"17720798629","password":"123456","code":"1245","type":1}', 'assert_list': '{"errcode":0,"data":{"nickname":None,"avatar":None},"errmsg":None}'}
+2022-10-11 10:02:36,328 py37_api INFO test_g50regiser.py [24] 测试参数
+{'username': '', 'phone': '17720798629', 'password': '123456', 'code': '1245', 'type': 1}
+2022-10-11 10:02:36,328 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '账号不存在'}
+2022-10-11 10:02:36,328 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:36,328 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:36,328 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:36,328 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:36,504 py37_api INFO test_g50regiser.py [23] {'id': 7, 'title': '登入失败(密码错误)', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/login', 'req_data': '{"username":"","phone":"17720798629","password":"1234567","code":"1245","type":1}', 'assert_list': '{"errcode":400,"data":None,"errmsg":"密码错误"}'}
+2022-10-11 10:02:36,504 py37_api INFO test_g50regiser.py [24] 测试参数
+{'username': '', 'phone': '17720798629', 'password': '1234567', 'code': '1245', 'type': 1}
+2022-10-11 10:02:36,505 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '账号不存在'}
+2022-10-11 10:02:36,505 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:36,505 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:36,505 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:36,505 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:36,663 py37_api INFO test_g50regiser.py [23] {'id': 8, 'title': '登入失败(未输入密码)', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/login', 'req_data': '{"username":"","phone":"17720798629","password":"","code":"1245","type":1}', 'assert_list': '{"errcode":400,"data":None,"errmsg":"密码错误"}'}
+2022-10-11 10:02:36,664 py37_api INFO test_g50regiser.py [24] 测试参数
+{'username': '', 'phone': '17720798629', 'password': '', 'code': '1245', 'type': 1}
+2022-10-11 10:02:36,664 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '账号不存在'}
+2022-10-11 10:02:36,664 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:36,664 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:36,664 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:36,664 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:36,826 py37_api INFO test_g50regiser.py [23] {'id': 9, 'title': 'token获取用户信息', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/userinfoByToken', 'req_data': '{"token":"04b8082c0628d5ae8faf730fdccb82c6"}', 'assert_list': '{\n "errcode": 0,\n "data": {\n"uid": 1,\n"username": "mifi",\n"nickname": None,\n"avatar": None,\n"phone": 17720798629,\n"token": "04b8082c0628d5ae8faf730fdccb82c6"\n },\n "errmsg": None\n}'}
+2022-10-11 10:02:36,826 py37_api INFO test_g50regiser.py [24] 测试参数
+{'token': '04b8082c0628d5ae8faf730fdccb82c6'}
+2022-10-11 10:02:36,826 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 0, 'data': {'uid': 1, 'username': 'mifi123', 'nickname': '', 'avatar': None, 'phone': 15750878830, 'token': '04b8082c0628d5ae8faf730fdccb82c6'}, 'errmsg': None}
+2022-10-11 10:02:36,827 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:36,827 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:36,827 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:36,827 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:36,992 py37_api INFO test_g50regiser.py [23] {'id': 10, 'title': 'token获取用户信息（失败）', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/userinfoByToken', 'req_data': '{"token":"04b8082c0628d5ae8faf730fdccb82c6"}', 'assert_list': '{"errcode":400,"data":None,"errmsg":"token失效"}'}
+2022-10-11 10:02:36,993 py37_api INFO test_g50regiser.py [24] 测试参数
+{'token': '04b8082c0628d5ae8faf730fdccb82c6'}
+2022-10-11 10:02:36,993 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 0, 'data': {'uid': 1, 'username': 'mifi123', 'nickname': '', 'avatar': None, 'phone': 15750878830, 'token': '04b8082c0628d5ae8faf730fdccb82c6'}, 'errmsg': None}
+2022-10-11 10:02:36,993 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:36,993 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:36,993 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:36,993 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:37,131 py37_api INFO test_g50regiser.py [23] {'id': 11, 'title': '修改手机号', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/change_phone', 'req_data': '{"phone":"17720798629", "token":"04b8082c0628d5ae8faf730fdccb82c6","code":"4562","type":"1"}', 'assert_list': '{"errcode":400,"data":None,"errmsg":"验证码错误"}'}
+2022-10-11 10:02:37,132 py37_api INFO test_g50regiser.py [24] 测试参数
+{'phone': '17720798629', 'token': '04b8082c0628d5ae8faf730fdccb82c6', 'code': '4562', 'type': '1'}
+2022-10-11 10:02:37,132 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '验证码错误'}
+2022-10-11 10:02:37,132 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:37,132 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:37,132 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:37,132 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:37,277 py37_api INFO test_g50regiser.py [23] {'id': 12, 'title': '修改手机号（失败）', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/change_phone', 'req_data': '{"phone":"17720798629", "token":"04b8082c0628d5ae8faf730fdccb82c6","code":"","type":"1"}', 'assert_list': '{"errcode":400,"data":None,"errmsg":"验证码错误"}'}
+2022-10-11 10:02:37,277 py37_api INFO test_g50regiser.py [24] 测试参数
+{'phone': '17720798629', 'token': '04b8082c0628d5ae8faf730fdccb82c6', 'code': '', 'type': '1'}
+2022-10-11 10:02:37,277 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '验证码错误'}
+2022-10-11 10:02:37,277 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:37,277 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:37,278 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:37,278 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:37,445 py37_api INFO test_g50regiser.py [23] {'id': 13, 'title': '修改密码', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/change_password', 'req_data': '{"password": "17720798629", "token":"04b8082c0628d5ae8faf730fdccb82c6", "code": "5331" }', 'assert_list': '{"errcode":400,"data":None,"errmsg":"验证码错误"}'}
+2022-10-11 10:02:37,445 py37_api INFO test_g50regiser.py [24] 测试参数
+{'password': '17720798629', 'token': '04b8082c0628d5ae8faf730fdccb82c6', 'code': '5331'}
+2022-10-11 10:02:37,445 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '验证码错误'}
+2022-10-11 10:02:37,445 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:37,445 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:37,445 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:37,445 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:37,583 py37_api INFO test_g50regiser.py [23] {'id': 14, 'title': '修改密码失败', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/change_password', 'req_data': '{"password": "17720798629", "token":"04b8082c0628d5ae8faf730fdccb82c6" }', 'assert_list': '{"errcode":400,"data":None,"errmsg":"缺少必要参数"}'}
+2022-10-11 10:02:37,583 py37_api INFO test_g50regiser.py [24] 测试参数
+{'password': '17720798629', 'token': '04b8082c0628d5ae8faf730fdccb82c6'}
+2022-10-11 10:02:37,583 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '缺少必要参数'}
+2022-10-11 10:02:37,583 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:37,583 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:37,583 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:37,583 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:37,725 py37_api INFO test_g50regiser.py [23] {'id': 15, 'title': '退出登入失败', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/loginOut', 'req_data': '{}', 'assert_list': '{"errcode":400,"data":None,"errmsg":"缺少必要参数token"}'}
+2022-10-11 10:02:37,726 py37_api INFO test_g50regiser.py [24] 测试参数
+{}
+2022-10-11 10:02:37,726 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '缺少必要参数token'}
+2022-10-11 10:02:37,726 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:37,726 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:37,726 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:37,726 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:37,862 py37_api INFO test_g50regiser.py [23] {'id': 16, 'title': '退出登入', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/loginOut', 'req_data': '{"token":"04b8082c0628d5ae8faf730fdccb82c6"}', 'assert_list': '{"errcode":0,"data":None,"errmsg":"退出成功"}'}
+2022-10-11 10:02:37,863 py37_api INFO test_g50regiser.py [24] 测试参数
+{'token': '04b8082c0628d5ae8faf730fdccb82c6'}
+2022-10-11 10:02:37,863 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 0, 'data': None, 'errmsg': '退出成功'}
+2022-10-11 10:02:37,863 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:37,863 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:37,863 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:37,863 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:38,205 py37_api INFO test_g50JHregiser.py [23] {'id': 1, 'title': 'g50登入', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/aggregationServer/login', 'req_data': '{"cmd":"100","sn":"消息ID","body":{"ip":"10.28.22.11","port":"8080"}}', 'assert_list': '{\n"cmd":"100",\n"sn":"消息ID",\n"body":{\n"token":"a4e8548b8a2894ebe315813bb6acd6c0"\n},\n"code":0,\n"desc":"登录成功"\n}'}
+2022-10-11 10:02:38,206 py37_api INFO test_g50JHregiser.py [24] 测试参数
+{'cmd': '100', 'sn': '消息ID', 'body': {'ip': '10.28.22.11', 'port': '8080'}}
+2022-10-11 10:02:38,207 py37_api INFO test_g50JHregiser.py [25] 响应信息
+{'cmd': '100', 'sn': '消息ID', 'body': {'token': 'f4452545a6f52486565857a75f24a489'}, 'code': 0, 'desc': '登录成功'}
+2022-10-11 10:02:38,207 py37_api INFO my_assert.py [19] 要断言的内容为：
+cmd
+2022-10-11 10:02:38,207 py37_api INFO my_assert.py [19] 要断言的内容为：
+sn
+2022-10-11 10:02:38,207 py37_api INFO my_assert.py [19] 要断言的内容为：
+body
+2022-10-11 10:02:38,207 py37_api INFO my_assert.py [19] 要断言的内容为：
+code
+2022-10-11 10:02:38,207 py37_api INFO my_assert.py [19] 要断言的内容为：
+desc
+2022-10-11 10:02:38,207 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:38,395 py37_api INFO test_g50JHregiser.py [23] {'id': 2, 'title': '心跳接口', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/aggregationServer/keepalive', 'req_data': '{"cmd":"100","sn":"消息ID","body":{"token":"a4e8548b8a2894ebe315813bb6acd6c0"}}', 'assert_list': '{\n"cmd":"100",\n"sn":"消息ID",\n"body":{\n"status":1\n},\n"code":0,\n"desc":"存活"\n}'}
+2022-10-11 10:02:38,395 py37_api INFO test_g50JHregiser.py [24] 测试参数
+{'cmd': '100', 'sn': '消息ID', 'body': {'token': 'a4e8548b8a2894ebe315813bb6acd6c0'}}
+2022-10-11 10:02:38,395 py37_api INFO test_g50JHregiser.py [25] 响应信息
+{'cmd': '100', 'sn': '消息ID', 'body': {'status': 1}, 'code': 0, 'desc': '存活'}
+2022-10-11 10:02:38,396 py37_api INFO my_assert.py [19] 要断言的内容为：
+cmd
+2022-10-11 10:02:38,396 py37_api INFO my_assert.py [19] 要断言的内容为：
+sn
+2022-10-11 10:02:38,396 py37_api INFO my_assert.py [19] 要断言的内容为：
+body
+2022-10-11 10:02:38,396 py37_api INFO my_assert.py [19] 要断言的内容为：
+code
+2022-10-11 10:02:38,396 py37_api INFO my_assert.py [19] 要断言的内容为：
+desc
+2022-10-11 10:02:38,396 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:38,553 py37_api INFO test_g50JHregiser.py [23] {'id': 3, 'title': '心跳接口（未登入）', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/aggregationServer/keepalive', 'req_data': '{"cmd":"100","sn":"消息ID","body":{"token":"5041b16e2918e7327bd0aad5f157c457"}}', 'assert_list': '{\n"cmd":"100",\n"sn":"消息ID",\n"body":[],\n"code":201,\n"desc":"聚合服务器未登录"\n}'}
+2022-10-11 10:02:38,553 py37_api INFO test_g50JHregiser.py [24] 测试参数
+{'cmd': '100', 'sn': '消息ID', 'body': {'token': '5041b16e2918e7327bd0aad5f157c457'}}
+2022-10-11 10:02:38,553 py37_api INFO test_g50JHregiser.py [25] 响应信息
+{'cmd': '100', 'sn': '消息ID', 'body': {'status': 1}, 'code': 0, 'desc': '存活'}
+2022-10-11 10:02:38,554 py37_api INFO my_assert.py [19] 要断言的内容为：
+cmd
+2022-10-11 10:02:38,554 py37_api INFO my_assert.py [19] 要断言的内容为：
+sn
+2022-10-11 10:02:38,554 py37_api INFO my_assert.py [19] 要断言的内容为：
+body
+2022-10-11 10:02:38,554 py37_api INFO my_assert.py [19] 要断言的内容为：
+code
+2022-10-11 10:02:38,554 py37_api INFO my_assert.py [19] 要断言的内容为：
+desc
+2022-10-11 10:02:38,554 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:38,712 py37_api INFO test_g50JHregiser.py [23] {'id': 4, 'title': '更新流量包', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/recharge/update', 'req_data': '{"name":"1024G","price":"2999","id":"4"}', 'assert_list': '{"errcode":0,"data":None,"errmsg":"修改成功"}'}
+2022-10-11 10:02:38,712 py37_api INFO test_g50JHregiser.py [24] 测试参数
+{'name': '1024G', 'price': '2999', 'id': '4'}
+2022-10-11 10:02:38,712 py37_api INFO test_g50JHregiser.py [25] 响应信息
+{'errcode': 0, 'data': None, 'errmsg': '修改成功'}
+2022-10-11 10:02:38,712 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:38,712 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:38,712 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:38,712 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:38,883 py37_api INFO test_g50JHregiser.py [23] {'id': 5, 'title': '更新流量包(发送失败)', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/recharge/update', 'req_data': '{"name":"1024G","price":"2999","id":"4"}', 'assert_list': '{\n "errcode": 400,\n "data": [],\n "errmsg": "发送失败"\n}'}
+2022-10-11 10:02:38,883 py37_api INFO test_g50JHregiser.py [24] 测试参数
+{'name': '1024G', 'price': '2999', 'id': '4'}
+2022-10-11 10:02:38,883 py37_api INFO test_g50JHregiser.py [25] 响应信息
+{'errcode': 0, 'data': None, 'errmsg': '修改成功'}
+2022-10-11 10:02:38,883 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:38,883 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:38,883 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:38,884 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:39,051 py37_api INFO test_g50JHregiser.py [23] {'id': 6, 'title': '获取流量包列表', 'method': 'get', 'url': 'http://g50api.test.mifitec.com/v1/recharge/list', 'req_data': '{}', 'assert_list': '{"errcode":0,"data":[{"name":"10G","price":"99.00"},{"name":"30G","price":"199.00"},{"name":"100G","price":"399.00"},{"name":"300G","price":"999.00"}],"errmsg":None}'}
+2022-10-11 10:02:39,051 py37_api INFO test_g50JHregiser.py [24] 测试参数
+{}
+2022-10-11 10:02:39,052 py37_api INFO test_g50JHregiser.py [25] 响应信息
+{'errcode': 0, 'data': [{'name': '10G', 'price': '99.00'}, {'name': '30G', 'price': '199.00'}, {'name': '100G', 'price': '399.00'}, {'name': '1024G', 'price': '2999.00'}, {'name': '1024G', 'price': '2999.00'}, {'name': '1024G', 'price': '2999.00'}], 'errmsg': None}
+2022-10-11 10:02:39,052 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:39,052 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:39,052 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:39,052 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:39,217 py37_api INFO test_g50JHregiser.py [23] {'id': 7, 'title': '获取流量包列表（发送失败）', 'method': 'get', 'url': 'http://g50api.test.mifitec.com/v1/recharge/list', 'req_data': '{}', 'assert_list': '{\n "errcode": 400,\n "data": [],\n "errmsg": "发送失败"\n}'}
+2022-10-11 10:02:39,218 py37_api INFO test_g50JHregiser.py [24] 测试参数
+{}
+2022-10-11 10:02:39,218 py37_api INFO test_g50JHregiser.py [25] 响应信息
+{'errcode': 0, 'data': [{'name': '10G', 'price': '99.00'}, {'name': '30G', 'price': '199.00'}, {'name': '100G', 'price': '399.00'}, {'name': '1024G', 'price': '2999.00'}, {'name': '1024G', 'price': '2999.00'}, {'name': '1024G', 'price': '2999.00'}], 'errmsg': None}
+2022-10-11 10:02:39,218 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:39,218 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:39,218 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:39,218 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:39,397 py37_api INFO test_g50JHregiser.py [23] {'id': 8, 'title': '添加流量包', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/recharge/add', 'req_data': '{"name":"300G","price":"999"}', 'assert_list': '{"errcode":0,"data":None,"errmsg":"添加成功"}'}
+2022-10-11 10:02:39,398 py37_api INFO test_g50JHregiser.py [24] 测试参数
+{'name': '300G', 'price': '999'}
+2022-10-11 10:02:39,398 py37_api INFO test_g50JHregiser.py [25] 响应信息
+{'errcode': 0, 'data': None, 'errmsg': '添加成功'}
+2022-10-11 10:02:39,398 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:39,398 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:39,398 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:39,398 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:39,537 py37_api INFO test_g50JHregiser.py [23] {'id': 9, 'title': '添加流量包失败', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/recharge/add', 'req_data': '{"name":""\n}', 'assert_list': '{"errcode":400,"data":None,"errmsg":"参数name price值不能为空"}'}
+2022-10-11 10:02:39,537 py37_api INFO test_g50JHregiser.py [24] 测试参数
+{'name': ''}
+2022-10-11 10:02:39,537 py37_api INFO test_g50JHregiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '缺少必要参数'}
+2022-10-11 10:02:39,538 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:39,538 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:39,538 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:39,538 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:40,229 py37_api INFO test_g50regiser.py [23] {'id': 1, 'title': '发短信', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/sms/send_code', 'req_data': '{"phone":"17720798629"}', 'assert_list': '{"errcode":0,"data":None,"errmsg":"发送成功"}'}
+2022-10-11 10:02:40,230 py37_api INFO test_g50regiser.py [24] 测试参数
+{'phone': '17720798629'}
+2022-10-11 10:02:40,230 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 0, 'data': None, 'errmsg': '发送成功'}
+2022-10-11 10:02:40,230 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:40,230 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:40,230 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:40,231 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:40,369 py37_api INFO test_g50regiser.py [23] {'id': 2, 'title': '发短信（发送失败）', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/sms/send_code', 'req_data': '{"phone":"177207986291"}', 'assert_list': '{"errcode":400,"data":None,"errmsg":"请输入正确手机号"}'}
+2022-10-11 10:02:40,369 py37_api INFO test_g50regiser.py [24] 测试参数
+{'phone': '177207986291'}
+2022-10-11 10:02:40,369 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '请输入正确手机号'}
+2022-10-11 10:02:40,369 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:40,369 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:40,369 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:40,369 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:40,504 py37_api INFO test_g50regiser.py [23] {'id': 3, 'title': '注册成功', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/register', 'req_data': '{"username":"mifi","phone":"15750878830","password":"mifi","code":"8342"}', 'assert_list': '{"errcode":400,"data":None,"errmsg":"验证码错误"}'}
+2022-10-11 10:02:40,504 py37_api INFO test_g50regiser.py [24] 测试参数
+{'username': 'mifi', 'phone': '15750878830', 'password': 'mifi', 'code': '8342'}
+2022-10-11 10:02:40,504 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '验证码错误'}
+2022-10-11 10:02:40,504 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:40,504 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:40,504 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:40,505 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:40,633 py37_api INFO test_g50regiser.py [23] {'id': 4, 'title': '注册失败', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/register', 'req_data': '{"username":"mifi","phone":"15750878830","password":"mifi","code":"8342"}', 'assert_list': '{"errcode":400,"data":None,"errmsg":"验证码错误"}'}
+2022-10-11 10:02:40,633 py37_api INFO test_g50regiser.py [24] 测试参数
+{'username': 'mifi', 'phone': '15750878830', 'password': 'mifi', 'code': '8342'}
+2022-10-11 10:02:40,633 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '验证码错误'}
+2022-10-11 10:02:40,633 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:40,633 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:40,633 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:40,634 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:40,773 py37_api INFO test_g50regiser.py [23] {'id': 5, 'title': '忘记密码', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/forget', 'req_data': '{"phone":"17720798629","password":"123456","code":"9480"}', 'assert_list': '{"errcode":400,"data":None,"errmsg":"验证码错误"}'}
+2022-10-11 10:02:40,773 py37_api INFO test_g50regiser.py [24] 测试参数
+{'phone': '17720798629', 'password': '123456', 'code': '9480'}
+2022-10-11 10:02:40,773 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '验证码错误'}
+2022-10-11 10:02:40,773 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:40,773 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:40,774 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:40,774 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:40,946 py37_api INFO test_g50regiser.py [23] {'id': 6, 'title': '登入成功', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/login', 'req_data': '{"username":"","phone":"17720798629","password":"123456","code":"1245","type":1}', 'assert_list': '{"errcode":0,"data":{"nickname":None,"avatar":None},"errmsg":None}'}
+2022-10-11 10:02:40,946 py37_api INFO test_g50regiser.py [24] 测试参数
+{'username': '', 'phone': '17720798629', 'password': '123456', 'code': '1245', 'type': 1}
+2022-10-11 10:02:40,946 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '账号不存在'}
+2022-10-11 10:02:40,947 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:40,947 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:40,947 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:40,947 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:41,102 py37_api INFO test_g50regiser.py [23] {'id': 7, 'title': '登入失败(密码错误)', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/login', 'req_data': '{"username":"","phone":"17720798629","password":"1234567","code":"1245","type":1}', 'assert_list': '{"errcode":400,"data":None,"errmsg":"密码错误"}'}
+2022-10-11 10:02:41,102 py37_api INFO test_g50regiser.py [24] 测试参数
+{'username': '', 'phone': '17720798629', 'password': '1234567', 'code': '1245', 'type': 1}
+2022-10-11 10:02:41,102 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '账号不存在'}
+2022-10-11 10:02:41,102 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:41,102 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:41,102 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:41,102 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:41,269 py37_api INFO test_g50regiser.py [23] {'id': 8, 'title': '登入失败(未输入密码)', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/login', 'req_data': '{"username":"","phone":"17720798629","password":"","code":"1245","type":1}', 'assert_list': '{"errcode":400,"data":None,"errmsg":"密码错误"}'}
+2022-10-11 10:02:41,269 py37_api INFO test_g50regiser.py [24] 测试参数
+{'username': '', 'phone': '17720798629', 'password': '', 'code': '1245', 'type': 1}
+2022-10-11 10:02:41,269 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '账号不存在'}
+2022-10-11 10:02:41,269 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:41,270 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:41,270 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:41,270 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:41,413 py37_api INFO test_g50regiser.py [23] {'id': 9, 'title': 'token获取用户信息', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/userinfoByToken', 'req_data': '{"token":"04b8082c0628d5ae8faf730fdccb82c6"}', 'assert_list': '{\n "errcode": 0,\n "data": {\n"uid": 1,\n"username": "mifi",\n"nickname": None,\n"avatar": None,\n"phone": 17720798629,\n"token": "04b8082c0628d5ae8faf730fdccb82c6"\n },\n "errmsg": None\n}'}
+2022-10-11 10:02:41,414 py37_api INFO test_g50regiser.py [24] 测试参数
+{'token': '04b8082c0628d5ae8faf730fdccb82c6'}
+2022-10-11 10:02:41,414 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': 'token失效'}
+2022-10-11 10:02:41,414 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:41,414 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:41,414 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:41,414 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:41,568 py37_api INFO test_g50regiser.py [23] {'id': 10, 'title': 'token获取用户信息（失败）', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/userinfoByToken', 'req_data': '{"token":"04b8082c0628d5ae8faf730fdccb82c6"}', 'assert_list': '{"errcode":400,"data":None,"errmsg":"token失效"}'}
+2022-10-11 10:02:41,568 py37_api INFO test_g50regiser.py [24] 测试参数
+{'token': '04b8082c0628d5ae8faf730fdccb82c6'}
+2022-10-11 10:02:41,569 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': 'token失效'}
+2022-10-11 10:02:41,569 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:41,569 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:41,569 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:41,569 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:41,709 py37_api INFO test_g50regiser.py [23] {'id': 11, 'title': '修改手机号', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/change_phone', 'req_data': '{"phone":"17720798629", "token":"04b8082c0628d5ae8faf730fdccb82c6","code":"4562","type":"1"}', 'assert_list': '{"errcode":400,"data":None,"errmsg":"验证码错误"}'}
+2022-10-11 10:02:41,709 py37_api INFO test_g50regiser.py [24] 测试参数
+{'phone': '17720798629', 'token': '04b8082c0628d5ae8faf730fdccb82c6', 'code': '4562', 'type': '1'}
+2022-10-11 10:02:41,710 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '验证码错误'}
+2022-10-11 10:02:41,710 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:41,710 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:41,710 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:41,710 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:41,877 py37_api INFO test_g50regiser.py [23] {'id': 12, 'title': '修改手机号（失败）', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/change_phone', 'req_data': '{"phone":"17720798629", "token":"04b8082c0628d5ae8faf730fdccb82c6","code":"","type":"1"}', 'assert_list': '{"errcode":400,"data":None,"errmsg":"验证码错误"}'}
+2022-10-11 10:02:41,878 py37_api INFO test_g50regiser.py [24] 测试参数
+{'phone': '17720798629', 'token': '04b8082c0628d5ae8faf730fdccb82c6', 'code': '', 'type': '1'}
+2022-10-11 10:02:41,878 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '验证码错误'}
+2022-10-11 10:02:41,878 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:41,878 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:41,878 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:41,878 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:42,029 py37_api INFO test_g50regiser.py [23] {'id': 13, 'title': '修改密码', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/change_password', 'req_data': '{"password": "17720798629", "token":"04b8082c0628d5ae8faf730fdccb82c6", "code": "5331" }', 'assert_list': '{"errcode":400,"data":None,"errmsg":"验证码错误"}'}
+2022-10-11 10:02:42,029 py37_api INFO test_g50regiser.py [24] 测试参数
+{'password': '17720798629', 'token': '04b8082c0628d5ae8faf730fdccb82c6', 'code': '5331'}
+2022-10-11 10:02:42,029 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '用户不存在'}
+2022-10-11 10:02:42,029 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:42,029 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:42,030 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:42,030 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:42,172 py37_api INFO test_g50regiser.py [23] {'id': 14, 'title': '修改密码失败', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/change_password', 'req_data': '{"password": "17720798629", "token":"04b8082c0628d5ae8faf730fdccb82c6" }', 'assert_list': '{"errcode":400,"data":None,"errmsg":"缺少必要参数"}'}
+2022-10-11 10:02:42,172 py37_api INFO test_g50regiser.py [24] 测试参数
+{'password': '17720798629', 'token': '04b8082c0628d5ae8faf730fdccb82c6'}
+2022-10-11 10:02:42,172 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '缺少必要参数'}
+2022-10-11 10:02:42,172 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:42,172 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:42,172 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:42,172 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:42,319 py37_api INFO test_g50regiser.py [23] {'id': 15, 'title': '退出登入失败', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/loginOut', 'req_data': '{}', 'assert_list': '{"errcode":400,"data":None,"errmsg":"缺少必要参数token"}'}
+2022-10-11 10:02:42,319 py37_api INFO test_g50regiser.py [24] 测试参数
+{}
+2022-10-11 10:02:42,320 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 400, 'data': None, 'errmsg': '缺少必要参数token'}
+2022-10-11 10:02:42,320 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:42,320 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:42,320 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:42,320 py37_api INFO my_assert.py [28] 所有断言成功！
+2022-10-11 10:02:42,481 py37_api INFO test_g50regiser.py [23] {'id': 16, 'title': '退出登入', 'method': 'post', 'url': 'http://g50api.test.mifitec.com/v1/member/loginOut', 'req_data': '{"token":"04b8082c0628d5ae8faf730fdccb82c6"}', 'assert_list': '{"errcode":0,"data":None,"errmsg":"退出成功"}'}
+2022-10-11 10:02:42,481 py37_api INFO test_g50regiser.py [24] 测试参数
+{'token': '04b8082c0628d5ae8faf730fdccb82c6'}
+2022-10-11 10:02:42,482 py37_api INFO test_g50regiser.py [25] 响应信息
+{'errcode': 0, 'data': None, 'errmsg': '已经退出'}
+2022-10-11 10:02:42,482 py37_api INFO my_assert.py [19] 要断言的内容为：
+errcode
+2022-10-11 10:02:42,482 py37_api INFO my_assert.py [19] 要断言的内容为：
+data
+2022-10-11 10:02:42,482 py37_api INFO my_assert.py [19] 要断言的内容为：
+errmsg
+2022-10-11 10:02:42,482 py37_api INFO my_assert.py [28] 所有断言成功！
